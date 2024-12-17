@@ -21,7 +21,7 @@ document.getElementById("search-input").addEventListener("keyup", function(event
 
 // Function to fetch search results from PHP
 function fetchSearchResults(query) {
-    fetch("php/search.php?search_query=" + encodeURIComponent(query))
+    fetch("/php/search.php?search_query=" + encodeURIComponent(query))
         .then(response => response.json())
         .then(data => {
             displaySearchResults(data);

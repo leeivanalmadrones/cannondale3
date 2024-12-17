@@ -5,10 +5,9 @@ header('Content-Type: application/json'); // Ensure JSON response
 
 
 $host = 'localhost';
-$dbname = 'cannondale_db';
-$username = 'root';
-$password = '';
-$dsn = "mysql:host=$host;dbname=$dbname;charset=utf8";
+$dbname = 'u143688490_cannondale_db';
+$username = 'u143688490_cannondale';
+$password = 'Cannondale54321';
 
 try {
     $pdo = new PDO($dsn, $username, $password);

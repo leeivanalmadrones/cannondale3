@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     // Fetch user details on page load
-    fetch('php/checkout.php')  // This is where you call the PHP endpoint
+    fetch('/php/checkout.php')  // This is where you call the PHP endpoint
         .then(response => response.json())
         .then(data => {
             // Check if user data is available
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 localStorage.setItem('userPurchases', JSON.stringify(userPurchases));
 
                 // Send the order data via AJAX
-                fetch('php/place_order.php', {
+                fetch('/php/place_order.php', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

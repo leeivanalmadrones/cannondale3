@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Fetch user details from the backend
-    fetch('php/profile_data.php')
+    fetch('/php/profile_data.php')
         .then(response => response.json())
         .then(data => {
             if (data.error) {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
          // Logout button functionality
     document.getElementById("logout-button").addEventListener("click", function () {
         // Make an AJAX request to log out the user
-        fetch('php/logout.php', {
+        fetch('/php/logout.php', {
             method: 'POST'  // Make it a POST request to log out
         })
         .then(response => response.json())
