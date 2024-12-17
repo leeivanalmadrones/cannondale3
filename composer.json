@@ -1,0 +1,13 @@
+{
+    "name": "acer/cannondale3",
+    "description": "Cannodale Bikes",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yes"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
