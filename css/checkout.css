@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #111;
+}
+
+#site { 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: 600;
+    color: #111;
+}
+
+table {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 9rem;
+    border-collapse: collapse;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    font-weight: 600;
+}
+ 
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Pricing Section */
+#pricing {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 61rem;
+    margin-bottom: 20px;
+}
+
+#pricing p {
+    margin: 10px 0;
+}
+
+#pricing strong {
+    font-weight: 600;
+}
+
+
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 15px 0px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #000;
+    background-color: #fff;
+}
+
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #000;
+}
+
+#shipping-same input {
+    margin-left: 10px;
+}
+ 
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 10%;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 61rem;
+}
+
+/* Form Container */
+#checkout-order-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    margin-left: 15rem;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+#checkout-order-form h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #111;
+}
+
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #site {
+        padding: 20px;
+    }
+
+    table,
+    form {
+        width: 100%;
+    }
+
+    #pricing p {
+        font-size: 16px;
+    }
+}

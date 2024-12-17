@@ -1,0 +1,148 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+#site {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Header */
+#masthead {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#masthead h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Order Summary Table */
+#checkout-cart {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    font-weight: 600;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Pricing Section */
+#pricing {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 58rem;
+}
+
+#pricing p {
+    margin: 10px 0;
+}
+
+#pricing strong {
+    font-weight: 600;
+}
+
+#sshipping,
+#stotal {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* User Data Section */
+#user-details {
+    margin-top: 40px;
+    margin-left: 7rem;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#user-details h2 {
+    text-align: center;
+    color: #333;
+    margin-right: 7rem;
+}
+
+#user-details-content {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#user-details-content p {
+    margin: 8px 0;
+}
+
+/* PayPal Button */
+#paypal-form {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 10%;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 59rem;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #site {
+        padding: 20px;
+    }
+
+    table,
+    #pricing {
+        width: 100%;
+    }
+
+    #user-details {
+        padding: 15px;
+    }
+
+}

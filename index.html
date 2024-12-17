@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cannondale</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second">
+            <a href="#" class="mb-logo">Cannondale</a>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='bx bx-menu'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='bx bx-x'></i>
+            </span>
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <a href="#" class="logo">Cannondale</a>
+
+
+                    <div class="search">
+                        <input type="text" id="search-input" placeholder="Search for bikes">
+                        <i class='bx bx-search-alt' id="search-button"></i>
+                        <i class='bx bx-x' id="close-button" style="display: none;"></i>
+                    </div>
+                    <div id="search-results"></div>
+
+                    
+                    <ul class="user-menu">
+                        <li><a href="profile.html"><i class='bx bx-user-circle'></i></a></li>
+                        <li><a href="cart.html"><i class='bx bx-cart'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="#">home</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="./products.html">Bikes<i class='bx bxs-chevron-down'></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Main</h3>
+                                            <ul>
+                                                <li><a href="cross.html">Cross Country Bikes</a></li>
+                                                <li><a href="trail.html">Trail Bikes</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Road Bikes</h3>
+                                            <ul>
+                                                <li><a href="cross.html">Race Bikes</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Scalpel Bikes</h3>
+                                            <ul>
+                                                <li><a href="cross.html">Scalpel</a></li>
+                                               
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Carbon Bikes</h3>
+                                            <ul>
+                                                <li><a href="trail.html">Carbon HT</a></li>
+                                               
+                                            </ul>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="#contact-footer">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <div class="hero-container" style="background-image: url('images/bike.jpg'); height: 83vh; background-size: cover; background-position: center;">
+        <div class="hero-content">
+             <h2> Cannondale Bikes</h2>
+        </div>
+    </div>
+    
+    <!-- hero section -->
+    <div class="hero">
+        <div class="slider">
+            <div class="container">
+                <!-- slide item -->
+                <div class="slide active">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                                FIND YOUR RIDE
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                                Mountain Bike
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                Crafted for good times in the dirt. Trail bikes and<br> Cross Country Bikes 
+                            </p>
+                            <div class="top-down trans-delay-0-6">
+                                <a href="mtb.html">
+                                <button class="btn-flat btn-hover">
+                                    <span>shop now</span>
+                                </button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img top-down">
+                        <img src="./images/mtb.png" alt="">
+                    </div>
+                </div>
+                <!-- end slide item -->
+                <!-- slide item -->
+                <div class="slide">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                                FIND YOUR RIDE
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                                Road Bike
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                From the fastest race bike on the planet to the most capable off-road <br> our road bikes are designed to suit your ride. 
+                            <div class="top-down trans-delay-0-6">
+                            <a href="rb.html">
+                                <button class="btn-flat btn-hover">
+                                    <span>shop now</span>
+                                </button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img right-left">
+                        <img src="./images/rb.webp" alt="">
+                    </div>
+                </div>
+                <!-- end slide item -->
+                <!-- slide item -->
+                <div class="slide">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                                FIND YOUR RIDE 
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                                Electric Bike
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                The power for more - more rides, more speed, more distance, more fun. 
+                            </p>
+                            <div class="top-down trans-delay-0-6">
+                                <a href="ebike.html">
+                                <button class="btn-flat btn-hover">
+                                    <span>shop now</span>
+                                </button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img left-right">
+                        <img src="./images/ebike.png" alt="">
+                    </div>
+                </div>
+                <!-- end slide item -->
+                                 <!-- slide item -->
+                <div class="slide">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                                FIND YOUR RIDE 
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                                Gravel Bike
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                Conquer any terrain, where adventure meets versatility. Ride with freedom, ride with us! 
+                            </p>
+                            <div class="top-down trans-delay-0-6">
+                                <a href="gravel.html">
+                                <button class="btn-flat btn-hover">
+                                    <span>shop now</span>
+                                </button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img left-right">
+                        <img src="./images/gravel.jpg" alt="">
+                    </div>
+                </div>
+                <!-- end slide item -->
+            </div>
+            <!-- slider controller -->
+            <button class="slide-controll slide-next">
+                <i class='bx bxs-chevron-right'></i>
+            </button>
+            <button class="slide-controll slide-prev">
+                <i class='bx bxs-chevron-left'></i>
+            </button>
+            <!-- end slider controller -->
+        </div>
+    </div>
+    <!-- end hero section -->
+
+    <!-- promotion section -->
+    <div class="promotion">
+        <div class="section-header">
+            <h2>COLLECTIONS</h2>
+        </div>
+        <div class="row">
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="promotion-box">
+                    <div class="text">
+                        <h3>MAVARO Family</h3>
+                    <a href="mavfam.html">
+                        <button class="btn-flat btn-hover"><span>view collection</span></button>
+                    </a>
+                    </div>
+                    <img src="./images/mavaro.png" alt="">
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="promotion-box">
+                    <div class="text">
+                        <h3>Synapse Family</h3>
+                    <a href="neofam.html">
+                        <button class="btn-flat btn-hover"><span>view collection</span></button>
+                     </a>
+                    </div>
+                    <img src="./images/synap.png" alt="">
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="promotion-box">
+                    <div class="text">
+                        <h3>Tesoro Family</h3>
+                     <a href="tesoro.html">
+                         <button class="btn-flat btn-hover"><span>view collection</span></button>
+                     </a>
+                    </div>
+                    <img src="./images/tesoro.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end promotion section -->
+ <!-- product list -->
+ <div class="section">
+    <div class="container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end product list -->
+
+    <div class="hero-container" style="background-image: url('images/bg.jpg'); height: 85vh; background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h1>Find Your Adventure</h1>
+            <p>Discover the perfect gear for your journey.</p>
+        </div>
+    </div>
+    
+    <!-- product list -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>BEST SELLING BIKES</h2>
+            </div>
+            <div class="row" id="best-products">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-imgs">
+                            <img src="./images/caad1.png" alt="">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-card-name">
+                             CAAD OPTIMO 1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-imgs">
+                            <img src="./images/lefty1.png" alt="">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-card-name">
+                             Topstone Carbon Lefty 3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-imgs">
+                            <img src="./images/ssix.png" alt="">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-card-name">
+                             Supersix EVO 1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-imgs">
+                            <img src="./images/scalp1.png" alt="">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-card-name">
+                             Scalpel HT Carbon 3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-imgs">
+                            <img src="./images/se1.webp" alt="">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-card-name">
+                             Scalpel Carbon SE 1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-imgs">
+                            <img src="./images/sl1.png" alt="">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-card-name">
+                             Moterra SL 1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-imgs">
+                            <img src="./images/ltd1.png" alt="">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-card-name">
+                             Synapse Carbon LTD
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-imgs">
+                            <img src="./images/neo1.png" alt="">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-card-name">
+                            Adventure NEO 1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end product list -->
+     
+    <!-- footer -->
+    <footer class="bg-second" id="contact-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Products</h3>
+                    <ul class="menu">
+                        <li><a href="#">Cross Country Bikes</a></li>
+                        <li><a href="#">Trail Bikes</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">services</h3>
+                    <ul class="menu">
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Product help</a></li>
+                        <li><a href="#">Order Status</a></li>
+                    </ul>
+                </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="contact">
+                    <h3 class="contact-header">
+                        Cannondale
+                        <img src="images/logo.png" alt="Cannondale Logo" class="contact-logo">
+                    </h3>
+                </div> 
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- app js -->
+    <script src="js/search.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/index.js"></script>
+   
+
+</body>
+
+</html>

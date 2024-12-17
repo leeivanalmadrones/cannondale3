@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script defer src="js/cart.js"></script>
+</head>
+<body>
+<header>
+    <div class="mobile-menu bg-second">   
+        <a href="#" class="mb-logo">Cannondale</a>
+        <span class="mb-menu-toggle" id="mb-menu-toggle">
+            <i class='bx bx-menu'></i>
+        </span>
+    </div>
+    <div class="header-wrapper" id="header-wrapper">
+        <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+            <i class='bx bx-x'></i>
+        </span>
+        <div class="bg-main">
+            <div class="mid-header container">
+                <div class="header-left">
+                    <a href="index.html" class="back-button">
+                        <i class='bx bx-arrow-back'></i> 
+                    </a>
+                    <a href="#" class="logo">Shopping Cart</a>
+                </div>                
+                <div id="search-results"></div>
+                <ul class="user-menu">
+                    <li><a href="profile.html"><i class='bx bx-user-circle'></i></a></li>
+                    <li><a href="cart.html"><i class='bx bx-cart'></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="cart-container">
+    <div class="cart-items" id="cart-items">
+        <!-- Example of a cart item structure -->
+        <div class="cart-item" data-product-id="1">
+            <img src="./images/default-image.png" alt="Product Name">
+            <div class="item-details">
+                <h3>Product Name</h3>
+                <p>Price: ₱1,000.00</p>
+                <div class="quantity-controls">
+                    <button class="quantity-minus" data-product-id="1">-</button>
+                    <span class="quantity-value" id="quantity-1">1</span>
+                    <button class="quantity-plus" data-product-id="1">+</button>
+                </div>
+                <p>Total: ₱1,000.00</p>
+                <button class="remove-item-btn" data-product-id="1">Remove</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="cart-summary">
+        <h1>Item Summary</h1>
+        <div class="items-summary">  <!-- Ensure this element exists -->
+            <p>Items: 0</p>
+            <p>Shipping: ₱1500</p>
+            <p>Total: ₱0.00</p>
+
+        </div>
+        <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
+    </div>
+            
+    
+
+</div>
+</body>
+</html>

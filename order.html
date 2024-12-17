@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/order.css" media="screen" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body id="checkout-page">
+
+<div id="site">
+	<header id="masthead">
+		<h1></h1>
+	</header>
+	<div id="content">
+		<h1>Items</h1>
+			<table id="checkout-cart" class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Quantity</th>
+					<th scope="col">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+		 <div id="pricing">
+			
+			<p id="shipping">
+				<strong>Shipping</strong>: <span id="sshipping"></span>
+			</p>
+			
+			<p id="sub-total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+		 </div>
+		 
+		 <div id="user-details">
+		 	<h2>Details</h2>
+		 	<div id="user-details-content"></div>
+		 </div>
+		 
+		 
+		 
+		 
+<form id="paypal-form" action="" method="post">
+	<input type="hidden" name="cmd" value="_cart" />
+	<input type="hidden" name="upload" value="1" />
+	<input type="hidden" name="business" value="" />
+        
+</form>
+
+<p><input type="button" id="submit-order" value="Close" class="btn" onclick="window.location.href='index.html';" /></p>
+
+		 
+	</div>
+	
+	
+
+</div>
+
+<script>
+     // Get URL parameters
+     const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('name');
+    const email = urlParams.get('email');
+    const contact = urlParams.get('contact');
+    const city = urlParams.get('city');
+    const address = urlParams.get('address');
+    const landmark = urlParams.get('landmark');
+    const zip = urlParams.get('zip');
+
+    // Populate the user details section
+    document.getElementById("user-details-content").innerHTML = `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Contact:</strong> ${contact}</p>
+        <p><strong>City:</strong> ${city}</p>
+        <p><strong>Address:</strong> ${address}</p>
+        <p><strong>Landmark:</strong> ${landmark}</p>
+        <p><strong>ZIP Code:</strong> ${zip}</p>
+    `;
+
+	document.addEventListener('DOMContentLoaded', function() {
+    // Get the selected items from sessionStorage
+    const cartItems = JSON.parse(sessionStorage.getItem('checkoutCart') || '[]');
+    
+    // If no items in the cart, show a message
+    if (cartItems.length === 0) {
+        document.querySelector('#checkout-cart tbody').innerHTML = '<tr><td colspan="3">No items in your cart.</td></tr>';
+        document.querySelector('#sshipping').textContent = '₱0.00';
+        document.querySelector('#stotal').textContent = '₱0.00';
+        return;
+    } 
+
+    let cartHTML = '';
+    let subtotal = 0;
+
+    // Loop through selected cart items to populate the table and calculate subtotal
+    cartItems.forEach(item => {
+        const itemPrice = parseFloat(item.price) || 0; // Ensure price is a valid number
+        const itemTotal = item.price * item.quantity;
+        subtotal += itemTotal;
+
+        cartHTML += `
+            <tr>
+                <td>${item.name}</td>
+                <td>${item.quantity}</td>
+                <td>₱${itemTotal.toLocaleString()}</td>
+            </tr>
+        `;
+    });
+
+    // Update the cart table with selected items
+    document.querySelector('#checkout-cart tbody').innerHTML = cartHTML;
+
+    // Calculate total pricing (Shipping and Total)
+    const shipping = 1500;  // You can modify this value or calculate based on cart
+    const total = subtotal + shipping;
+
+    document.querySelector('#sshipping').textContent = `₱${shipping.toLocaleString()}`;
+    document.querySelector('#stotal').textContent = `₱${total.toLocaleString()}`;
+});
+</script>
+
+
+</body>
+</html>	
+
+   

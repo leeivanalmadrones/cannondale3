@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/checkout.css">
+    <script defer src="js/checkout.js"></script>
+</head>
+<body id="checkout-page">
+
+<div id="site">
+    <header id="masthead">
+        <h1>Checkout</h1>
+    </header>
+
+    <div id="content">
+        <table id="checkout-cart" class="shopping-cart">
+            <thead>
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic content will be inserted here -->
+            </tbody>
+        </table>
+
+        <div id="pricing">
+            <p id="shipping"><strong>Shipping</strong>: <span id="sshipping"></span></p>
+            <p id="sub-total"><strong>Total</strong>: <span id="stotal"></span></p>
+        </div>
+
+        <form id="checkout-order-form" method="get" action="order.html">
+            <h2>User Details</h2>
+            
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required readonly />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" required readonly />
+                </div>
+                <div>
+                    <label for="contact">Contact Number</label>
+                    <input type="text" name="contact" id="contact" required readonly />
+                </div>
+                <div>
+                     <label for="address">Address</label>
+                    <input type="text" name="address" id="address" required readonly />
+                </div>
+           
+        </form>
+        
+        
+            <p><input type="submit" id="submit-order" value="Place order" class="btn" /></p>
+        </form>
+            </div>
+</div>
+
+
+</body>
+</html>

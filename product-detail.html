@@ -1,0 +1,167 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cannondale</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- app css -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+ 
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="mobile-menu bg-second">
+            <a href="#" class="mb-logo">Cannondale</a>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='bx bx-menu'></i>
+            </span>
+        </div>
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='bx bx-x'></i>
+            </span>
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <a href="#" class="logo">Cannondale</a>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='bx bx-search-alt'></i>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="#"><i class='bx bx-user-circle'></i></a></li>
+                        <li><a href="cart.html"><i class='bx bx-cart'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- product-detail content -->
+    <div class="bg-main">
+        <div class="container">
+            <div class="box">
+                <div class="breadcumb">
+                    <a href="./index.html">home</a>
+                    <span><i class='bx bxs-chevrons-right'></i></span>
+                    <a href="./products.html">all products</a>
+                    <span><i class='bx bxs-chevrons-right'></i></span>
+                    <a href="./product-detail.html"></a>
+                </div>
+            </div>
+            <div class="row product-row">
+                <div class="col-5 col-md-12">
+                    <div class="product-img" id="product-img">
+                        <img src="./images/scalp.png" alt="" id="product-image"> <!-- Add id for image -->
+                    </div>
+                </div>
+                <div class="col-7 col-md-12">
+                    <div class="product-info">
+                        <h1 class="product-title" id="product-name">Scalpel 1</h1>
+                        <div class="product-info-detail">
+                            <span class="product-info-detail-title">Rated:</span>
+                            <span class="rating product-rating" id="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </span>
+                        </div>  
+                        <p class="product-description" id="product-description"></p> 
+                        Built for adventurous riders, the Scalpel combines top-notch XC technology with unmatched agility. With a lightweight frame and trail-taming suspension, it's your perfect companion for tackling tough terrains at an unbeatable value.
+
+
+                        </p>
+                        <div class="product-info-price product-price" id="product-price">₱198,750.00</div>
+                        <div class="product-quantity-wrapper">
+                            
+                            </span>
+                           
+                            </span>
+                        </div>
+                        <div>
+                            <button class="btn-flat btn-hover" id="buy-now-btn">Buy Now</button>
+                        </div>
+                        <div>
+                            <button class="btn-flat btn-hover" id="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="box">
+                <div class="box-header">
+                  Advice
+                </div>
+                <div class="product-detail-description">
+                    <button class="btn-flat btn-hover btn-view-description" id="view-all-description">
+                        view all
+                    </button>
+                    <div class="product-detail-description-content" id="product-full-description">
+                        <p>
+                            Explore our guide on choosing the right bike frame size to enhance comfort and performance during your rides. Plus, learn essential maintenance tips to keep your bike in peak condition year-round.                        </p>
+
+                     
+                        
+                        <img src="./images/scalp1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="box">
+                <div class="box-header">
+                    related products
+                </div>
+                <div class="row" id="related-products"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end product-detail content -->
+
+    <!-- footer -->
+    <footer class="bg-second" id="contact-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Products</h3>
+                    <ul class="menu">
+                        <li><a href="#">Cross Country Bikes</a></li>
+                        <li><a href="#">Trail Bikes</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">services</h3>
+                    <ul class="menu">
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Product help</a></li>
+                        <li><a href="#">Order Status</a></li>
+                    </ul>
+                </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="contact">
+                    <h3 class="contact-header">
+                        Cannondale
+                        <img src="images/logo.png" alt="Cannondale Logo" class="contact-logo">
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <!-- end footer -->
+
+    <!-- app js -->
+    <script src="./js/app.js"></script>
+    <script src="js/scalpel1.js"></script> 
+
+</body>
+</html>

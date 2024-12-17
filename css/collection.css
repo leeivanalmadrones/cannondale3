@@ -1,0 +1,230 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .nav-bar ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-bar ul li {
+    margin: 0 1rem;
+  }
+  
+  .nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-bar ul li a:hover {
+    color: #ff8303; 
+  }
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown > a {
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 0;
+    min-width: 180px;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: normal;
+    transition: all 0.3s ease;
+  }
+
+  .dropdown-menu a:hover {
+    transform: translateX(5px);
+    text-decoration: underline;
+  }
+
+  header .title {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
+  }
+  
+  
+  .hero-section {
+    height: 100vh;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+  }
+  
+  .product-name {
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+/* Section Container */
+.bike-showcase {
+  margin-top: 5%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.description p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bike-grid {
+  display: flex; /* Use flexbox for alignment */
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: center; /* Center-align items horizontally */
+  gap: 1.5rem; /* Add spacing between cards */
+}
+
+.bike-card {
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  width: 450px; 
+  position: relative; 
+  height: auto;
+}
+
+.new-label {
+  display: inline-block;
+  background: #0000007a;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.bike-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.bike-name {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.bike-description {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.compare-link {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.compare-link:hover {
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .bike-card {
+    width: 90%; 
+    padding: 1rem;
+  }
+
+  .bike-name {
+    font-size: 1.2rem;
+  }
+
+  .bike-description {
+    font-size: 0.9rem;
+  }
+}
+  /* Add responsiveness */
+  @media (max-width: 768px) {
+    .nav-bar ul {
+      flex-direction: column;
+    }
+  
+    .search-and-language {
+      flex-direction: column;
+    }
+  
+    .tagline {
+      font-size: 1.2rem;
+    }
+  
+    .product-name {
+      font-size: 2.5rem;
+    }
+  }
+  
