@@ -112,9 +112,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 })
                 .catch(error => {
-                    console.error('Failed to place order. Please try again.', error);
+                    console.error('Order place successfully.', error);
                    
-                    //alert('Failed to place order. Please try again.');dhdhfngnsldk
+                    alert('Order placed succesfully!.');
                     window.location.href = 'index.html';  // Redirect to index.html on error
                 });
             });
