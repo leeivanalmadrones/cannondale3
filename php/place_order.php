@@ -4,22 +4,8 @@ error_reporting(E_ALL);
 header('Content-Type: application/json'); // Ensure JSON response
 
 
-$host = 'localhost';
-$dbname = 'u143688490_cannondale_db';
-$username = 'u143688490_cannondale';
-$password = 'Cannondale54321';
+require 'db_connect.php';
 
-try {
-    $pdo = new PDO($dsn, $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    // Get JSON data from the AJAX request
-    $data = json_decode(file_get_contents("php://input"));
-
-    if (empty($data)) {
-        echo json_encode(['success' => false, 'error' => 'No data received']);
-        exit;
-    }
 
     $user_id = $data->user_id;
     $order_status = $data->order_status;
@@ -46,8 +32,4 @@ try {
     // Return a JSON response with success and order ID
     echo json_encode(['success' => true, 'order_id' => $order_id]);
 
-} catch (PDOException $e) {
-    // Catch any errors and return them as a JSON response
-    echo json_encode(['success' => false, 'error' => $e->getMessage()]);
-}
 ?>

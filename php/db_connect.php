@@ -1,5 +1,5 @@
 <?php
-$host = 'localhost';
+$host = 'srv1632.hstgr.io';
 $dbname = 'u143688490_cannondale_db';
 $username = 'u143688490_cannondale';
 $password = 'Cannondale54321';
