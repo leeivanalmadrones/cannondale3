@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 .catch(error => {
                     console.error('Order place successfully.', error);
                    
-                    alert('Order placed succesfully!.');
+                    alert('Order placed succesfully!');
                     window.location.href = 'index.html';  // Redirect to index.html on error
                 });
             });
