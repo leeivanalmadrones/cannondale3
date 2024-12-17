@@ -84,7 +84,7 @@ function renderCartItems() {
     cartItemsContainer.innerHTML = '';
 
     if (cartItems.length === 0) {
-        cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+        cartItemsContainer.innerHTML = '<p>No items in the cart.</p>';
         return;
     }
 
@@ -250,7 +250,7 @@ function renderCartItems() {
     cartItemsContainer.innerHTML = '';
 
     if (cartItems.length === 0) {
-        cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+        cartItemsContainer.innerHTML = '<p>No item in the cart.</p>';
         return;
     }
 
@@ -351,7 +351,7 @@ function renderCartItems() {
     cartItemsContainer.innerHTML = '';
 
     if (cartItems.length === 0) {
-        cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+        cartItemsContainer.innerHTML = '<p>No item in the cart.</p>';
         return;
     }
 

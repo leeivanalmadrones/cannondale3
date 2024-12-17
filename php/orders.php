@@ -18,7 +18,7 @@ if (isset($_SESSION['order_update_success'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage Orders</title>
-    <link rel="stylesheet" href="../css/orders.css">
+    <link rel="stylesheet" href="../css/products.css">
 </head>
 <body>
     <h1>Manage Orders</h1>

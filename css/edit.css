@@ -1,0 +1,192 @@
+/* General body and font settings */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1.6;
+    color: #333; 
+}
+
+/* Wrapper for form */
+/* Ensure the parent div is relatively positioned */
+div {
+    position: relative; /* Add relative positioning */
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 650px;
+    transition: transform 0.3s ease-in-out, scale 0.3s ease;
+}
+
+/* Cancel button stays inside the container */
+.cancel-button {
+    background-color: transparent;
+    color: #f44336;
+    font-size: 1.3rem;
+    border: none;
+    position: absolute; /* Stick it to the container */
+    top: 20px; /* Position from the top of the container */
+    right: 20px; /* Position from the right of the container */
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cancel-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Cancel button hover effect */
+.cancel-button:hover {
+    color: #e53935;
+}
+
+
+div:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+/* Title of the page */
+h1 {
+    text-align: center;
+    color: #4C4C6C;
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Styling for form labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555; 
+    font-size: 1rem;
+}
+
+/* Styling for form inputs */
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px 10px; /* Larger padding for more space */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+    background-color: #fafafa; /* Slightly darker gray background for inputs */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #888; /* Medium gray border on focus */
+    outline: none;
+    box-shadow: 0 0 8px rgba(136, 136, 136, 0.3); /* Soft focus shadow */
+    border-radius: 10px;
+}
+
+/* Larger description and price input styling */
+textarea {
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #fafafa;
+    height: 100px; 
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #fafafa;
+}
+
+/* Button styling */
+button[type="submit"] {
+    background-color: #333; /* Dark gray background for button */
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 25%;
+}
+
+button[type="submit"]:hover {
+    background-color: #555; /* Slightly lighter gray on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:active {
+    background-color: #444; /* Darker gray when active */
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    appearance: none;
+    background-color: #fafafa;
+    padding: 7px 14px; 
+    font-size: 0.9rem; 
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"%3e%3cpath d="M2 4l4 4 4-4" fill="none" stroke="%23ccc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/%3e%3c/svg%3e');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+/* Button container to align the button neatly */
+.form-actions {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Small screen responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    div {
+        padding: 25px;
+        width: 90%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea,
+    input[type="number"] {
+        font-size: 0.9rem;
+    }
+
+    button[type="submit"] {
+        padding: 12px 20px;
+    }
+}

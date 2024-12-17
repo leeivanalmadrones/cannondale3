@@ -4,6 +4,10 @@ body {
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
+    background-image: url('background.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
 }
 
 /* Container for forms */
@@ -15,15 +19,16 @@ body {
     padding: 20px;
 }
 
+
 /* Card styling */
 .card {
-    background: #ffffff;
-    padding: 25px;
+    background: rgba(255, 255, 255, 0.6); 
+    padding: 40px; 
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
 }
+
 
 /* Image container */
 .image-container {
@@ -59,7 +64,7 @@ body {
 }
 
 .form-group input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -79,11 +84,12 @@ body {
     color: #ffffff;
     border: none;
     padding: 10px 15px;
-    width: 100%;
+    width: 60%;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    margin-left: 70px;
 }
 
 .btn:hover {
